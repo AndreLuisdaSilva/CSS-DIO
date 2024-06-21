@@ -340,7 +340,7 @@ ul{
 }
 
 .brly:nth-child(2):hover{
-   background-image: url("assets/images/MAX-Hover.png");
+   background-image: url("images/MAX-Hover.png");
 }
 .brly:nth-child(3):hover{
     background-image: url("assets/images/DCNTS.png");

@@ -336,26 +336,26 @@ ul{
 
 /* Mudança de imagem ao passar o mouse */
 .brly:nth-child(1):hover{
-    background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/hbo-hover_0.png");
+    background-image: url("assets/images/hbo-hover_0.png");
 }
 
 .brly:nth-child(2):hover{
-   background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/MAX-Hover.png");
+   background-image: url("assets/images/MAX-Hover.png");
 }
 .brly:nth-child(3):hover{
-    background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/DCNTS.png");
+    background-image: url("assets/images/DCNTS.png");
 
 }
 .brly:nth-child(4):hover{
-    background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/WB-Hover.png");
+    background-image: url("assets/images/WB-Hover.png");
 }
 
 .brly:nth-child(5):hover{
-    background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/CN-Hover.png");
+    background-image: url("assets/images/CN-Hover.png");
 }
 
 .brly:nth-child(6):hover{
-    background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/UCL-Hover.png");
+    background-image: url("assets/images/UCL-Hover.png");
 }
 
 .brly:hover img {

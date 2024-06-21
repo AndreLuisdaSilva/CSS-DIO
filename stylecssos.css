@@ -1,0 +1,532 @@
+/* Estilo do header */
+header{
+    padding: 0px 0px 365.8px 0px;
+    position: relative;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gl 10s ease infinite alternate;
+}
+/* Estilo da barra de navegação */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background: var(--nav-bg-color);align-items: center;
+    padding: 8px 16px;
+    width: 100%;
+    z-index: 1;
+}
+
+nav{
+    margin: 0 16px 0 0;
+    display: flex;
+    
+}
+
+img{
+    width: 100%;
+    transition: opacity 1.86s;
+}
+/* Estilo da lista de navegação */
+nav ul{
+    display: flex;
+}
+
+nav li{
+    margin: 0.5px 6px 5px 26px;
+    display: inline;
+    font-size: 0.825rem;
+}
+
+/* Estilo dos links de navegação */
+li a{
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: none 0s ease 0s;
+}
+/* Estilo do body da página */
+body{
+    margin: 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis CSS */
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(45deg, #9b34ef 0%, #490cb0 20%, transparent 50%);
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(90deg, #5516ba, rgba(255, 0, 229, 0.5) 80%);
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff; 
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+    scroll-behavior: smooth;
+}
+
+/* Estilo das listas */
+.list{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+/* Estilo dos botões */
+.btn{
+    background: var(--tertiary-color);
+    border-radius: 100px;
+    padding: 6px 25px;
+    transition: 1.52s background-color, 1.52s color;
+}
+/* Estilo do contêiner de ícones */
+.btn--list:hover{
+    background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+}
+
+#iconepr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding: 0 40px
+}
+/* Estilo dos ícones */
+.icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 28px;
+    margin: 66.8px 25px;
+}
+/* Estilo do contêiner de vídeos */
+.containervideos{
+    width: 85px;
+    height: 55px;
+}
+/* Estilo dos títulos */
+h1{
+    text-overflow:inherit;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+.tst{
+    display: block;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+/* Estilo do divisor */
+#divides{
+    width: 700px;
+    max-width: 786px;
+    background-image: linear-gradient(90deg, #6231b2, rgba(255, 0, 225, 0.608) 80%);
+    height: 8px;
+    border-radius: 5px;
+}
+/* Estilo do texto principal */
+.prnjs{
+    text-align: center;
+    font-size: 1.2rem;
+}
+/* Estilo do preço */
+.preco{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.precos{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* Estilo do botão principal */
+.btr{
+    background: var(--btn-bg-color-gradient);
+    transition:  background 1.52s, 1.52s outline, transform 1.532s;
+    outline: 2px solid transparent;
+    padding: 16px 40px;
+    background-size: 56.5rem;
+    text-transform: uppercase;
+}
+
+.btr:hover{
+    outline: 2px solid rgb(108, 48, 166);
+    background-position: 195px;
+    background-color: transparent;
+    background-position: 100%;
+    transform: scale(1.06);
+}
+/* Animação de texto */
+.animate{
+    animation: ws 2s linear infinite;
+    cursor: pointer;
+    text-decoration: none;
+    color:rgb(249, 249, 249);
+}
+/* Animação de gradiente */
+@keyframes gl {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Animação de wave shake */
+@keyframes ws{
+    0%, 10% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    35% {
+        transform: rotate(-10deg);
+    }
+    40%, 100% {
+        transform: rotate(0);
+    }
+    
+}
+/* Gradiente do header */
+header::after {
+    content: "";
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: -6px;
+    background: linear-gradient(0deg,rgb(2,2,40), transparent);
+}
+/* Estilo do contêiner de vídeos */
+.tvv{
+    text-align: center;
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+    scroll-margin-top: 20px;
+}
+/* Estilo dos cards */
+.tv{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.cardes:has(.card:nth-child(2):hover) .card:nth-child(1) {
+    transform: rotateY(-45deg);
+}
+
+.cardes:has(.card:nth-child(1):hover) .card:nth-child(2) {
+    transform: rotateY(45deg);
+}
+
+.cardes{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    margin: 25px 25px;
+}
+
+.card{
+    min-height: 498px;
+    padding: 46px 40px;
+    border: 2px;
+    background: var(--card-bg-color);
+    display: flex;
+    justify-content: space-between;
+    transition: transform 2.126s ease-in-out;
+    border-radius: 8px;
+    flex-direction: column;
+}
+/* Estilo do título e preço dos cards */
+#tzt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.precy{
+    color: var(--secondary-color);
+    margin: unset;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.precy .precos{
+    color: azure;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+/* Estilo das listas não ordenadas */
+ul{
+    padding: 0;
+}
+/* Estilo das descrições */
+.ab{
+    text-align: left;
+    font-size: 1.26rem;
+    margin: 8px;
+    margin: 0 0 18px 0;
+    padding: 0 0 0 10px;
+}
+
+.ab::marker{
+    content: '+';
+    font-size: 1.26rem;
+}
+
+/* Estilo das seções */
+.wv{
+    max-width: 1180px;
+    padding: 50px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.br{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    
+}
+/* Estilo das grades */
+.brly{
+    background-size: cover;
+    border: 2px solid transparent;
+    background-position: center;
+    transition: transform 0.85s, background-image 0.85s, border 1.5s;
+    border-radius: 16px;
+}
+
+.brly:hover{
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+}
+
+/* Mudança de imagem ao passar o mouse */
+.brly:nth-child(1):hover{
+    background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/hbo-hover_0.png");
+}
+
+.brly:nth-child(2):hover{
+   background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/MAX-Hover.png");
+}
+.brly:nth-child(3):hover{
+    background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/DCNTS.png");
+
+}
+.brly:nth-child(4):hover{
+    background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/WB-Hover.png");
+}
+
+.brly:nth-child(5):hover{
+    background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/CN-Hover.png");
+}
+
+.brly:nth-child(6):hover{
+    background-image: url("C:/Users/felip/OneDrive/Pictures/Capturas de tela/UCL-Hover.png");
+}
+
+.brly:hover img {
+    opacity: 0;
+}
+/* Estilo do footer */
+footer{
+    text-align: center;
+    padding: 5px;
+}
+
+.rodnvs{
+    text-decoration: none;
+    margin: auto 16px;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    font-weight: 800;
+}
+
+.rodnvs:hover{
+    color: #ffffff;
+    transition: 1.5s;
+}
+
+#cpryy{
+    color: var(--link-color);
+    margin: 16px auto;
+}
+/* Estilo dos ícones */
+.olaico{
+    width:unset ;
+
+}
+
+.olaicos{
+    width:22px;
+}
+/* Estilo dos botões */
+.eaebr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0 6px 0;
+    gap: 40px;
+}
+
+.lnrgra{
+    padding: unset;
+}
+
+.lgent{
+    max-width: 798px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212, 212, 212, 0.06);
+    margin: 6.68px auto;
+    gap: 22px;
+    border-radius: 8px;
+    padding: 35px;
+}
+
+.cptxp{
+    background-color:var(--form-bg-color) ;
+    padding: 12px;
+    border: var(--form-field-border);
+    border-radius: 6px;
+    color: var(--text-color) ;
+}
+
+/* Estilo dos rótulos */
+.ln{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 18px 0 26px 0;
+}
+/* Estilo do main */
+main{
+    padding: 26px;
+    margin: 20.6px 0;
+}
+
+#navbare{
+    position: relative;
+    box-sizing: border-box;
+}
+
+.lgtqs{
+    margin: 26px 6px 6px 2px;
+}
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 480px) {
+    .navbar{
+        padding: 32px 16px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #navbare{
+        position: relative;
+    }
+
+    .icones{
+        flex-wrap: wrap;
+        padding-top: 128px;
+    }
+
+    #divides{
+        width: 100%;
+        height: 6px;
+    }
+
+    .tvv{
+        text-align: center;
+        padding: 25px;
+        max-width: 1200px;
+        margin: auto;
+        scroll-margin-top: 125px;
+    }
+
+    .cardes{
+        flex-direction: column;
+        margin: 5px 5px;
+    }
+
+    .card{
+        padding: 26px 25px;
+        transition: unset;
+    }
+
+    .cardes:has(.card:nth-child(2):hover) .card:nth-child(1) {
+        transform: unset
+    }
+    
+    .cardes:has(.card:nth-child(1):hover) .card:nth-child(2) {
+        transform: unset;
+    }
+
+    .br{
+        grid-template-columns: repeat(6, 100%);
+        overflow: auto;
+    }
+
+    footer{
+        text-align: center;
+        padding: 65px 2px;
+    }
+
+    .rodnvs{
+        display: block;
+        margin-bottom: 18px;
+    }
+
+    .lgtqs button {
+        display: block;
+        margin: 6px 2px 18px 8px;
+    }
+      
+}
+
+/* Estilo personalizado para scroll */
+
+ ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+  }

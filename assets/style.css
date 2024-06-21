@@ -336,26 +336,26 @@ ul{
 
 /* Mudança de imagem ao passar o mouse */
 .brly:nth-child(1):hover{
-    background-image: url("assets/images/hbo-hover_0.png");
+    background-image: url("images/hbo-hover_0.png");
 }
 
 .brly:nth-child(2):hover{
    background-image: url("images/MAX-Hover.png");
 }
 .brly:nth-child(3):hover{
-    background-image: url("assets/images/DCNTS.png");
+    background-image: url("images/DCNTS.png");
 
 }
 .brly:nth-child(4):hover{
-    background-image: url("assets/images/WB-Hover.png");
+    background-image: url("images/WB-Hover.png");
 }
 
 .brly:nth-child(5):hover{
-    background-image: url("assets/images/CN-Hover.png");
+    background-image: url("images/CN-Hover.png");
 }
 
 .brly:nth-child(6):hover{
-    background-image: url("assets/images/UCL-Hover.png");
+    background-image: url("images/UCL-Hover.png");
 }
 
 .brly:hover img {
